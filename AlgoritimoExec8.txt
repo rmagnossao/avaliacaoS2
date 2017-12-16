@@ -1,0 +1,61 @@
+Algoritimo
+
+var 
+numeroA: inteiro
+numeroB: inteiro
+
+tamanhoA: inteiro
+tamanhoB: inteiro
+tamanhoVetorC: inteiro
+
+posicao: inteiro
+numeroC: vetor
+
+numeroConcatenado: inteiro
+pos: inteiro
+
+numeroAConvertido: caracter
+numeroBConvertido: caracter
+
+Inicio
+
+    tamanhoA <- tamanho(a)
+    tamanhoB <- taamnho(b)
+    tamanhoVetorC <- tamanhoA + tamanhoB
+    
+    numeroAConvertido <- (char)numeroA
+    numeroBConvertido <- (char)numeroB
+    
+    numeroConcatenado <- a//b
+    
+    para idx de 0 ate tamanhoVetorC faca
+      
+        se numeroConcatenado > 1000000 entao
+            numeroC[pos] <- -1
+            sair
+        fim se
+
+        se idx < tamanhoA entao
+            numeroC[pos] = numeroAConvertido.substring(idx,idx+1)
+            pos++;
+        fim se
+      
+        se idx < tamanhoB entao 
+            numeroC[pos] = numeroBConvertido.substring(idx,idx+1)
+            pos++;
+        fim se
+
+    fim para
+      
+    para idx de 0 ate tamanhoVetorC
+     
+        se numeroC[idx] = null
+        sair
+         
+        Mostra(numeroC[idx]);
+      
+    fim para
+Fim
+
+      
+
